@@ -1,0 +1,43 @@
+================================================
+  anvil_homepage - Claude 세션 진행 기록
+================================================
+이 파일은 Claude가 각 작업 세션이 끝날 때 업데이트합니다.
+새 세션을 시작할 때는 이 파일과 git log를 먼저 읽으세요.
+
+------------------------------------------------
+[2026-07-15] 문의 프로세스 영역 제거
+------------------------------------------------
+작업 내용:
+- 홈페이지에서 "문의 후 이렇게 진행됩니다." 프로세스 영역을 제거
+- 해당 위치로 이동하던 데스크톱/모바일 `Process` 메뉴도 제거
+- `pnpm build`로 화면 빌드 확인 완료
+
+현재 상태:
+- 홈페이지에 문의 프로세스 영역과 끊어진 메뉴 링크가 없음
+
+다음 세션에서 해야 할 일:
+- feature_list.json 에서 passes: false 항목 확인 후 작업
+
+------------------------------------------------
+[2026-06-15] 초기 셋업 (세션 #1)
+------------------------------------------------
+작업 내용:
+- 홈페이지 전체 UI/UX 구현 완료 (P0~P2)
+  - Header, HeroSection, ProblemSection, SolutionSection
+  - ServicesSection (스크롤 애니메이션 포함)
+  - CaseStudiesSection, ProcessSection, DeliverablesSection
+  - AboutSection, ContactSection, Footer
+- Harness 환경 설정 (init.sh, claude-progress.txt, feature_list.json)
+
+현재 상태:
+- 모든 섹션 컴포넌트 구현됨
+- ServicesSection: 카드 높이를 이미지와 동일하게 맞추는 수정 작업 중
+- 공개 이미지 파일: public/images/ 폴더에 추가 예정
+
+다음 세션에서 해야 할 일:
+- feature_list.json 에서 passes: false 항목 확인 후 작업
+- 모바일 반응형 검토
+- Supabase 연동 (ContactSection 문의 폼 데이터 저장)
+
+마지막 커밋: c6ec9e2 feat: complete homepage UI and UX improvements (P0 to P2)
+================================================

@@ -5,7 +5,6 @@ import SolutionSection from "@/components/SolutionSection";
 import ServicesSection from "@/components/ServicesSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import AboutSection from "@/components/AboutSection";
-import ProcessSection from "@/components/ProcessSection";
 // import DeliverablesSection from "@/components/DeliverablesSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -21,7 +20,6 @@ export default function Home() {
         <ServicesSection />
         <CaseStudiesSection />
         <AboutSection />
-        <ProcessSection />
         {/* <DeliverablesSection /> */}
         <ContactSection />
       </main>
