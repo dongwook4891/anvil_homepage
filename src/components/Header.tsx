@@ -34,7 +34,7 @@ export default function Header() {
         {/* Desktop CTA */}
         <div className="hidden md:flex">
           <Link 
-            href="#contact" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLScaS5m0BwB-CSQcSOK93bOveri3YivbFf-ijGmu29f5BMgmvA/viewform?usp=publish-editor"
             className="bg-accent-primary text-bg-base font-semibold text-[15px] px-6 h-[44px] rounded-lg hover:bg-accent-hover transition-all flex items-center justify-center shadow-[0_0_15px_rgba(209,250,229,0.15)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base cursor-pointer"
           >
             상담 신청
@@ -72,7 +72,7 @@ export default function Header() {
             </Link>
           ))}
           <Link 
-            href="#contact" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLScaS5m0BwB-CSQcSOK93bOveri3YivbFf-ijGmu29f5BMgmvA/viewform?usp=publish-editor"
             onClick={() => setIsMobileMenuOpen(false)} 
             className="mt-2 bg-accent-primary text-bg-base font-semibold text-[16px] text-center h-[52px] flex items-center justify-center rounded-lg shadow-sm"
           >

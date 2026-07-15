@@ -102,7 +102,7 @@ export default function ServicesSection() {
         {/* Section Bottom CTA (Primary) */}
         <div className="mt-16 lg:mt-20 text-center flex flex-col items-center">
           <Link 
-            href="#contact" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLScaS5m0BwB-CSQcSOK93bOveri3YivbFf-ijGmu29f5BMgmvA/viewform?usp=publish-editor"
             className="inline-flex items-center gap-3 bg-accent-primary text-bg-base font-bold text-[16px] px-10 h-[60px] rounded-xl hover:bg-accent-hover transition-all shadow-[0_0_20px_rgba(209,250,229,0.15)] group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base cursor-pointer"
           >
             어떤 서비스가 맞는지 상담하기

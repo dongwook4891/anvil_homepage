@@ -46,7 +46,7 @@ export default function ContactSection() {
         {/* Big CTA Block */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
           <Link 
-            href="#contact" 
+            href="https://docs.google.com/forms/d/e/1FAIpQLScaS5m0BwB-CSQcSOK93bOveri3YivbFf-ijGmu29f5BMgmvA/viewform?usp=publish-editor"
             className="w-full sm:w-auto bg-accent-primary text-bg-base font-bold text-[18px] px-10 h-[64px] rounded-xl hover:bg-accent-hover transition-all flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(209,250,229,0.2)] group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base cursor-pointer"
           >
             프로젝트 상담 신청하기
