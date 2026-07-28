@@ -15,7 +15,7 @@ export default function ProcessSection() {
           <h2 className="text-[clamp(32px,4vw,48px)] font-bold text-text-primary tracking-tight mb-6 leading-[1.25] break-keep">
             문의 후 이렇게 진행됩니다.
           </h2>
-          <p className="text-[17px] md:text-[19px] text-text-secondary leading-[1.7] break-keep max-w-[680px]">
+          <p className="text-[18px] md:text-[20px] font-medium text-text-secondary leading-[1.7] break-keep max-w-[680px]">
             프로젝트의 목적, 현재 단계, 필요한 산출물에 따라 진행 방식은 달라집니다. 먼저 상황을 파악한 뒤 가장 적합한 범위와 진행 방식을 제안합니다.
           </p>
         </div>
@@ -40,15 +40,10 @@ export default function ProcessSection() {
 
                 <div className="flex flex-col h-full bg-bg-elevated/50 p-6 rounded-xl border border-border-subtle/50 group-hover:border-text-muted transition-colors shadow-sm">
                   <h3 className="text-[18px] md:text-[20px] font-bold text-text-primary mb-3 break-keep leading-[1.3]">{step.title}</h3>
-                  <p className="text-[15px] text-text-secondary leading-[1.65] break-keep">{step.desc}</p>
+                  <p className="text-[16px] md:text-[17px] font-medium text-text-secondary leading-[1.65] break-keep">{step.desc}</p>
                 </div>
 
-                {/* Highlight Estimate Step */}
-                {idx === 4 && (
-                  <div className="absolute -top-3 right-0 bg-accent-primary text-bg-base text-[11px] font-bold px-2 py-1 rounded shadow-sm">
-                    투명한 견적
-                  </div>
-                )}
+
               </div>
             ))}
           </div>

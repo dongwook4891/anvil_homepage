@@ -19,7 +19,7 @@ export default function DeliverablesSection() {
           <h2 className="text-[clamp(32px,4vw,48px)] font-bold text-text-primary tracking-tight mb-6 leading-[1.25] break-keep">
             미팅에서 확인할 수 있는 산출물
           </h2>
-          <p className="text-[17px] md:text-[19px] text-text-secondary leading-[1.7] break-keep max-w-[640px] mb-8">
+          <p className="text-[18px] md:text-[20px] font-medium text-text-secondary leading-[1.7] break-keep max-w-[640px] mb-8">
             보안상 상세 산출물은 홈페이지에 공개하지 않습니다. 30분 미팅 또는 프로젝트 상담 과정에서 익명화된 산출물 예시를 확인하실 수 있습니다.
           </p>
           
@@ -43,7 +43,7 @@ export default function DeliverablesSection() {
                   <svg aria-hidden="true" className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
                 </div>
                 <h3 className="text-[18px] font-bold text-text-primary">{item.name}</h3>
-                <p className="text-[14px] text-text-secondary leading-[1.65] break-keep">{item.desc}</p>
+                <p className="text-[15px] md:text-[16px] font-medium text-text-secondary leading-[1.65] break-keep">{item.desc}</p>
               </div>
             ))}
           </div>

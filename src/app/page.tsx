@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import ServicesSection from "@/components/ServicesSection";
-import CaseStudiesSection from "@/components/CaseStudiesSection";
+
 import AboutSection from "@/components/AboutSection";
 // import DeliverablesSection from "@/components/DeliverablesSection";
 import ContactSection from "@/components/ContactSection";
@@ -18,7 +18,7 @@ export default function Home() {
         <ProblemSection />
         <SolutionSection />
         <ServicesSection />
-        <CaseStudiesSection />
+
         <AboutSection />
         {/* <DeliverablesSection /> */}
         <ContactSection />

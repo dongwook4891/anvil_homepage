@@ -4,10 +4,10 @@ export default function SolutionSection() {
       <div className="max-w-[1200px] w-full mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-16 md:mb-24">
           <h2 className="text-[clamp(32px,4vw,48px)] font-bold text-text-primary tracking-tight mb-6 leading-[1.2] break-keep">
-            문제정의부터 MVP 검증까지 <br />하나의 제품관리 흐름으로 연결합니다.
+            더욱 체계적이고 효율적인 <br /><strong>Product Management</strong>
           </h2>
-          <p className="text-text-secondary text-[17px] md:text-[19px] leading-[1.7] break-keep max-w-[680px]">
-            앤빌은 기획서 작성에 머무르지 않습니다. 고객 인터뷰, 데이터 분석, 마켓 리서치, 서비스 기획, AI 기반 MVP 제작, 프로젝트 관리까지 연결해 제품이 실제로 검증될 수 있는 상태를 만듭니다.
+          <p className="text-text-secondary text-[18px] md:text-[20px] font-medium leading-[1.7] break-keep max-w-[640px]">
+            고객 인터뷰, 데이터 분석, 마켓 리서치, 서비스 기획, MVP 제작, 프로젝트 관리까지 연결해 제품을 실제로 검증합니다.
           </p>
         </div>
 
@@ -18,14 +18,14 @@ export default function SolutionSection() {
 
           {/* Step 1: Discover */}
           <div className="relative z-10 flex flex-col">
-            <div className="w-full bg-bg-elevated border border-border-subtle rounded-2xl p-8 h-full flex flex-col group hover:border-text-muted transition-colors">
+            <div className="w-full bg-bg-elevated border border-border-subtle rounded-2xl p-8 md:p-10 pb-12 md:pb-16 h-full flex flex-col group hover:border-text-muted transition-colors">
               <div className="w-10 h-10 rounded-full bg-bg-subtle border border-border-subtle flex items-center justify-center text-accent-primary font-mono text-[13px] mb-6">
                 01
               </div>
               <h3 className="text-[22px] font-bold text-text-primary mb-2 font-mono uppercase tracking-wider">Discover</h3>
-              <p className="text-text-muted text-[13px] font-mono mb-6 pb-6 border-b border-border-subtle">발견 및 문제 정의</p>
+              <p className="text-text-secondary text-[15px] md:text-[16px] font-medium mb-6 pb-6 border-b border-border-subtle">발견 및 문제 정의</p>
               
-              <ul className="flex flex-col gap-3 text-[16px] text-text-secondary">
+              <ul className="flex flex-col gap-4 text-[17px] md:text-[18px] font-medium text-text-primary">
                 <li className="flex items-start gap-2">
                   <span className="text-accent-primary mt-1 text-[10px]">■</span>
                   문제 구조화
@@ -34,20 +34,24 @@ export default function SolutionSection() {
                   <span className="text-accent-primary mt-1 text-[10px]">■</span>
                   고객·데이터 분석
                 </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-accent-primary mt-1 text-[10px]">■</span>
+                  UX 리서치
+                </li>
               </ul>
             </div>
           </div>
 
           {/* Step 2: Define */}
           <div className="relative z-10 flex flex-col">
-            <div className="w-full bg-bg-elevated border border-border-subtle rounded-2xl p-8 h-full flex flex-col group hover:border-text-muted transition-colors">
+            <div className="w-full bg-bg-elevated border border-border-subtle rounded-2xl p-8 md:p-10 pb-12 md:pb-16 h-full flex flex-col group hover:border-text-muted transition-colors">
               <div className="w-10 h-10 rounded-full bg-bg-subtle border border-border-subtle flex items-center justify-center text-accent-primary font-mono text-[13px] mb-6">
                 02
               </div>
               <h3 className="text-[22px] font-bold text-text-primary mb-2 font-mono uppercase tracking-wider">Define</h3>
-              <p className="text-text-muted text-[13px] font-mono mb-6 pb-6 border-b border-border-subtle">전략 및 목표 설정</p>
+              <p className="text-text-secondary text-[15px] md:text-[16px] font-medium mb-6 pb-6 border-b border-border-subtle">전략 및 목표 설정</p>
               
-              <ul className="flex flex-col gap-3 text-[16px] text-text-secondary">
+              <ul className="flex flex-col gap-4 text-[17px] md:text-[18px] font-medium text-text-primary">
                 <li className="flex items-start gap-2">
                   <span className="text-accent-primary mt-1 text-[10px]">■</span>
                   제품 전략
@@ -60,20 +64,24 @@ export default function SolutionSection() {
                   <span className="text-accent-primary mt-1 text-[10px]">■</span>
                   MVP 범위 설정
                 </li>
+                <li className="flex items-start gap-2 whitespace-nowrap">
+                  <span className="text-accent-primary mt-1 text-[10px]">■</span>
+                  요구사항 구체화 및 확정
+                </li>
               </ul>
             </div>
           </div>
 
           {/* Step 3: Design */}
           <div className="relative z-10 flex flex-col">
-            <div className="w-full bg-bg-elevated border border-border-subtle rounded-2xl p-8 h-full flex flex-col group hover:border-text-muted transition-colors">
+            <div className="w-full bg-bg-elevated border border-border-subtle rounded-2xl p-8 md:p-10 pb-12 md:pb-16 h-full flex flex-col group hover:border-text-muted transition-colors">
               <div className="w-10 h-10 rounded-full bg-bg-subtle border border-border-subtle flex items-center justify-center text-accent-primary font-mono text-[13px] mb-6">
                 03
               </div>
               <h3 className="text-[22px] font-bold text-text-primary mb-2 font-mono uppercase tracking-wider">Design</h3>
-              <p className="text-text-muted text-[13px] font-mono mb-6 pb-6 border-b border-border-subtle">서비스 기획 및 설계</p>
+              <p className="text-text-secondary text-[15px] md:text-[16px] font-medium mb-6 pb-6 border-b border-border-subtle">서비스 기획 및 설계</p>
               
-              <ul className="flex flex-col gap-3 text-[16px] text-text-secondary">
+              <ul className="flex flex-col gap-4 text-[17px] md:text-[18px] font-medium text-text-primary">
                 <li className="flex items-start gap-2">
                   <span className="text-accent-primary mt-1 text-[10px]">■</span>
                   IA 구조도 설계
@@ -96,17 +104,17 @@ export default function SolutionSection() {
 
           {/* Step 4: Validate */}
           <div className="relative z-10 flex flex-col">
-            <div className="w-full bg-accent-primary/5 border border-accent-primary/30 rounded-2xl p-8 h-full flex flex-col group hover:border-accent-primary transition-colors">
-              <div className="w-10 h-10 rounded-full bg-accent-primary text-bg-base flex items-center justify-center font-bold font-mono text-[13px] mb-6 shadow-[0_0_15px_rgba(209,250,229,0.3)]">
+            <div className="w-full bg-bg-elevated border border-border-subtle rounded-2xl p-8 md:p-10 pb-12 md:pb-16 h-full flex flex-col group hover:border-text-muted transition-colors">
+              <div className="w-10 h-10 rounded-full bg-bg-subtle border border-border-subtle flex items-center justify-center text-accent-primary font-mono text-[13px] mb-6">
                 04
               </div>
               <h3 className="text-[22px] font-bold text-text-primary mb-2 font-mono uppercase tracking-wider">Validate</h3>
-              <p className="text-text-muted text-[13px] font-mono mb-6 pb-6 border-b border-border-subtle">MVP 검증 및 관리</p>
+              <p className="text-text-secondary text-[15px] md:text-[16px] font-medium mb-6 pb-6 border-b border-border-subtle">MVP 검증 및 관리</p>
               
-              <ul className="flex flex-col gap-3 text-[16px] text-text-primary font-medium">
+              <ul className="flex flex-col gap-4 text-[17px] md:text-[18px] font-medium text-text-primary">
                 <li className="flex items-start gap-2">
                   <span className="text-accent-primary mt-1 text-[10px]">■</span>
-                  AI 기반 MVP 제작
+                  MVP 제작
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-accent-primary mt-1 text-[10px]">■</span>

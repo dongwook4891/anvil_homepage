@@ -2,18 +2,22 @@
 
 @theme {
   /* Semantic Colors - B2B SaaS Dark Theme */
-  --color-bg-base: #0B0E14; /* Deep navy/charcoal */
-  --color-bg-elevated: #151821;
-  --color-bg-subtle: #1C202B;
+  --color-bg-base: #080C12; /* Deep navy/charcoal */
+  --color-bg-card: #1A212E;
+  --color-bg-elevated: #202938;
+  --color-bg-subtle: #101620;
   
-  --color-border-subtle: #2D3342;
+  --color-border-subtle: rgba(255, 255, 255, 0.12);
+  --color-border-visible: rgba(255, 255, 255, 0.2);
   
-  --color-text-primary: #F3F4F6;
-  --color-text-secondary: #9CA3AF;
-  --color-text-muted: #6B7280;
+  --color-text-primary: #F5F7FA;
+  --color-text-secondary: #C8D0DC;
+  --color-text-body: #B8C0CC;
+  --color-text-tertiary: #929BA8;
+  --color-text-muted: #6F7785;
   
-  --color-accent-primary: #D1FAE5; /* Tech light mint/lime */
-  --color-accent-hover: #A7F3D0;
+  --color-accent-primary: #A7FF2A; /* Tech light mint/lime */
+  --color-accent-hover: #C7FF75;
   
   --color-btn-secondary-bg: #1F2433;
 
@@ -79,4 +83,30 @@
 
 body {
   @apply bg-bg-base text-text-primary;
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease-out forwards;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-800 {
+    animation-delay: 800ms;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

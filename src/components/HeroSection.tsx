@@ -2,120 +2,103 @@ import Link from "next/link";
 
 export default function HeroSection() {
   const trustIndicators = [
-    "12년+ 플랫폼/IT 스타트업 PM 경험",
-    "이커머스 · B2B 플랫폼 · AI/LMS · O2O 서비스 기획 경험",
-    "고객 리서치 · 데이터 분석 · 서비스 기획 · AI MVP 검증"
-  ];
-
-  const workflowSteps = [
-    { name: 'Problem', icon: 'M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z' },
-    { name: 'Research', icon: 'M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' },
-    { name: 'Planning', icon: 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2' },
-    { name: 'AI MVP', icon: 'M13 10V3L4 14h7v7l9-11h-7z' },
-    { name: 'PM Execution', icon: 'M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z' }
+    "12년+ 국내 1등 유니콘 플랫폼/IT 스타트업 PM 경험",
+    "이커머스 · B2B 플랫폼 · AI/LMS · 교육·건축설계 · O2O 서비스 기획 경험",
+    "고객 리서치 · 데이터 분석 · 서비스 기획 · MVP 검증"
   ];
 
   return (
     <section className="w-full pt-[96px] pb-[120px] md:pt-[160px] md:pb-[160px] flex flex-col justify-center border-b border-border-subtle overflow-hidden relative">
-      <div className="max-w-[1200px] w-full mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-center gap-16 lg:gap-12 relative z-10">
+      <div className="max-w-[1200px] w-full mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-center gap-16 lg:gap-8 relative z-10">
         
         {/* Left Column: Messages & CTA */}
         <div className="flex-1 flex flex-col items-start w-full">
           
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-bg-elevated border border-border-subtle text-[13px] md:text-[14px] font-mono text-text-secondary mb-8 shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-accent-primary animate-pulse"></span>
-            Product Management Partner for AI/SaaS & B2B Platforms
-          </div>
-          
-          <h1 className="text-[clamp(40px,5.5vw,72px)] font-bold tracking-tight text-text-primary leading-[1.15] max-w-[700px] break-keep">
-            복잡한 아이디어를 <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-text-primary to-text-muted">제품 기획서와 AI MVP로</span> 바꿉니다.
+          <h1 className="text-[clamp(40px,5.5vw,72px)] font-bold tracking-tight text-text-primary leading-[1.15] max-w-[700px] break-keep animate-fade-in-up">
+            탄탄한 기획, <br />
+            안정적인 프로젝트, <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-text-primary to-text-muted">빠른 MVP검증!</span>
           </h1>
           
-          <p className="mt-8 text-[17px] md:text-[19px] text-text-secondary max-w-[620px] leading-[1.7] break-keep font-medium">
-            앤빌은 AI/SaaS, B2B 플랫폼, 신사업 조직을 위해 문제정의, 고객 리서치, 데이터 분석, 서비스 기획, MVP 범위 설정, 프로젝트 실행관리를 함께하는 제품관리 파트너입니다.
-          </p>
+          <div className="animate-fade-in-up animation-delay-400 w-full flex flex-col items-start">
+            <p className="mt-8 text-[18px] md:text-[20px] text-text-secondary max-w-[620px] leading-[1.7] break-keep font-medium">
+              AI/SaaS, B2B 플랫폼, 신사업 조직을 위해 문제정의, 고객 리서치, 데이터 분석, 서비스 기획, MVP 범위 설정, 프로젝트 실행관리를 함께하는 제품관리 파트너입니다.
+            </p>
 
-          {/* CTAs */}
-          <div className="mt-12 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-            <Link 
-              href="https://docs.google.com/forms/d/e/1FAIpQLScaS5m0BwB-CSQcSOK93bOveri3YivbFf-ijGmu29f5BMgmvA/viewform?usp=publish-editor"
-              className="bg-accent-primary text-bg-base font-bold text-[16px] px-8 h-[56px] rounded-xl hover:bg-accent-hover transition-all flex items-center justify-center gap-2 group shadow-[0_0_20px_rgba(209,250,229,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base cursor-pointer"
-            >
-              프로젝트 상담 신청하기
-              <svg aria-hidden="true" className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-            </Link>
-            <a 
-              href="https://cal.com" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-btn-secondary-bg text-text-primary border border-border-subtle font-semibold text-[16px] px-8 h-[56px] rounded-xl hover:bg-bg-subtle hover:border-text-muted transition-all flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base cursor-pointer"
-            >
-              30분 화상 미팅 요청하기
-            </a>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="mt-16 w-full flex flex-col gap-3">
-            <p className="text-[12px] font-mono text-text-muted uppercase tracking-wider mb-2">Proven Expertise</p>
-            <div className="flex flex-col gap-3">
-              {trustIndicators.map((indicator, i) => (
-                <div key={i} className="flex items-center gap-3 bg-bg-elevated border border-border-subtle px-4 py-3 rounded-lg shadow-sm w-fit max-w-full">
-                  <div className="w-5 h-5 rounded-full bg-accent-primary/10 flex items-center justify-center flex-shrink-0">
-                    <svg aria-hidden="true" className="w-3.5 h-3.5 text-accent-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
-                  </div>
-                  <span className="text-[14px] md:text-[15px] font-medium text-text-primary break-keep">{indicator}</span>
-                </div>
-              ))}
+            {/* CTAs */}
+            <div className="mt-12 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+              <Link 
+                href="https://docs.google.com/forms/d/e/1FAIpQLScaS5m0BwB-CSQcSOK93bOveri3YivbFf-ijGmu29f5BMgmvA/viewform?usp=publish-editor"
+                className="bg-accent-primary text-bg-base font-bold text-[16px] px-12 h-[56px] rounded-xl hover:bg-accent-hover transition-all flex items-center justify-center gap-2 group shadow-[0_0_20px_rgba(182,255,48,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base cursor-pointer"
+              >
+                프로젝트 상담 신청하기
+                <svg aria-hidden="true" className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+              </Link>
             </div>
           </div>
         </div>
 
-        {/* Right Column: Workflow Panel */}
-        <div className="flex-1 w-full max-w-[500px] lg:max-w-none hidden lg:flex justify-end">
-          <div className="relative w-full max-w-[460px] rounded-2xl border border-border-subtle bg-bg-elevated p-8 shadow-2xl flex flex-col gap-5 overflow-hidden">
-            {/* Ambient Background Glow */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-accent-primary/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/3"></div>
-            
-            <div className="flex justify-between items-center mb-2 relative z-10">
-              <div className="text-[13px] font-bold font-mono text-text-primary uppercase tracking-wider">Product Workflow</div>
-              <div className="flex gap-1.5">
-                <div className="w-2.5 h-2.5 rounded-full bg-border-subtle"></div>
-                <div className="w-2.5 h-2.5 rounded-full bg-border-subtle"></div>
-                <div className="w-2.5 h-2.5 rounded-full bg-accent-primary"></div>
-              </div>
-            </div>
-
-            {/* Workflow Steps */}
-            <div className="flex-1 flex flex-col gap-3 relative z-10">
-              {workflowSteps.map((step, i) => (
-                <div key={i} className="w-full bg-bg-base border border-border-subtle p-4 rounded-xl flex items-center gap-4 group hover:border-accent-primary/50 transition-colors shadow-sm">
-                  <div className="w-10 h-10 rounded-lg bg-bg-subtle border border-border-subtle flex items-center justify-center text-text-muted group-hover:text-accent-primary group-hover:border-accent-primary/30 transition-colors">
-                    <svg aria-hidden="true" className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={step.icon} /></svg>
-                  </div>
-                  <div className="text-[15px] font-bold text-text-primary">{step.name}</div>
-                  
-                  {i === 3 && (
-                    <div className="ml-auto flex items-center gap-2">
-                      <span className="text-[10px] font-mono text-accent-primary border border-accent-primary/30 bg-accent-primary/10 px-2 py-0.5 rounded">Vibe Coding</span>
-                    </div>
-                  )}
+        {/* Right Column: Proven Expertise Panel */}
+        <div className="flex-1 w-full max-w-[550px] lg:max-w-none flex flex-col items-start lg:items-end justify-center mt-12 lg:mt-0 animate-fade-in-up animation-delay-800">
+          <div className="w-full max-w-[520px] flex flex-col gap-4 relative">
+            <p className="text-[13px] font-mono text-text-muted uppercase tracking-widest mb-1 ml-1">Proven Expertise</p>
+            <div className="flex flex-col gap-4">
+              
+              {/* Card 1 */}
+              <div className="bg-bg-elevated border border-border-subtle p-5 md:p-6 rounded-2xl flex items-center gap-4 md:gap-5 shadow-lg relative group transition-all hover:border-text-muted">
+                <div className="w-[60px] h-[60px] rounded-[16px] bg-[#2A2D34] border border-[#3A3D44] flex-shrink-0 flex items-center justify-center text-text-primary">
+                  <svg className="w-7 h-7 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
                 </div>
-              ))}
-            </div>
+                <div className="flex items-start gap-2.5 flex-1">
+                  <div className="mt-0.5 flex-shrink-0">
+                    <svg className="w-5 h-5 text-accent-primary" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
+                  </div>
+                  <p className="text-[14px] md:text-[15px] font-medium text-text-body leading-[1.5] break-keep">
+                    {trustIndicators[0]}
+                  </p>
+                </div>
+              </div>
 
-            {/* Bottom Panel Text & CTA */}
-            <div className="mt-4 pt-6 border-t border-border-subtle relative z-10 flex flex-col gap-4">
-              <p className="text-[14px] text-text-muted leading-[1.6] break-keep">
-                고객·데이터 기반으로 문제를 정리하고, 검증 가능한 MVP 범위로 연결합니다.
-              </p>
-              <Link 
-                href="#contact"
-                className="inline-flex items-center justify-between bg-bg-subtle border border-border-subtle hover:border-text-muted text-text-primary text-[14px] font-medium px-4 py-3 rounded-lg transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary cursor-pointer"
-              >
-                <span>상담에서 진행 방식 확인하기</span>
-                <svg aria-hidden="true" className="w-4 h-4 text-text-muted group-hover:text-accent-primary transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-              </Link>
+              {/* Card 2 */}
+              <div className="bg-bg-elevated border border-border-subtle p-5 md:p-6 rounded-2xl flex items-center gap-4 md:gap-5 shadow-lg relative group transition-all hover:border-text-muted">
+                <div className="w-[60px] h-[60px] rounded-[16px] bg-[#2A2D34] border border-[#3A3D44] flex-shrink-0 flex items-center justify-center text-text-primary relative">
+                  <svg className="w-7 h-7 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 6l2-4h12l2 4M4 6v8a2 2 0 002 2h12a2 2 0 002-2V6" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 10v6M15 10v6" />
+                    <circle cx="6" cy="20" r="1.5" fill="currentColor" className="text-accent-primary" stroke="none" />
+                    <circle cx="12" cy="20" r="1.5" fill="currentColor" className="text-accent-primary" stroke="none" />
+                    <circle cx="18" cy="20" r="1.5" fill="currentColor" className="text-accent-primary" stroke="none" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} className="text-accent-primary" d="M6 20h12" />
+                  </svg>
+                </div>
+                <div className="flex items-start gap-2.5 flex-1">
+                  <div className="mt-0.5 flex-shrink-0">
+                    <svg className="w-5 h-5 text-accent-primary" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
+                  </div>
+                  <p className="text-[14px] md:text-[15px] font-medium text-text-body leading-[1.5] break-keep">
+                    {trustIndicators[1]}
+                  </p>
+                </div>
+              </div>
+
+              {/* Card 3 */}
+              <div className="bg-bg-elevated border border-border-subtle p-5 md:p-6 rounded-2xl flex items-center gap-4 md:gap-5 shadow-lg relative group transition-all hover:border-text-muted">
+                <div className="w-[60px] h-[60px] rounded-[16px] bg-[#2A2D34] border border-[#3A3D44] flex-shrink-0 flex items-center justify-center text-text-primary">
+                  <svg className="w-7 h-7 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} className="text-accent-primary" d="M15 10l-2 4h4l-2 4" />
+                  </svg>
+                </div>
+                <div className="flex items-start gap-2.5 flex-1">
+                  <div className="mt-0.5 flex-shrink-0">
+                    <svg className="w-5 h-5 text-accent-primary" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" /></svg>
+                  </div>
+                  <p className="text-[14px] md:text-[15px] font-medium text-text-body leading-[1.5] break-keep">
+                    {trustIndicators[2]}
+                  </p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

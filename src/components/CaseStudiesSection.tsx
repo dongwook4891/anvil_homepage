@@ -36,9 +36,9 @@ export default function CaseStudiesSection() {
       <div className="max-w-[1200px] w-full mx-auto px-6 md:px-12">
         <div className="max-w-3xl mb-12 lg:mb-20 flex flex-col items-start">
           <h2 className="text-[clamp(32px,4vw,48px)] font-bold text-text-primary tracking-tight mb-6 leading-[1.25] break-keep">
-            유사한 제품 문제를 구조화하고<br className="hidden md:block" /> 개선해왔습니다.
+            미래를 향한 제품관리,<br /> 지금 시작할 수 있습니다.
           </h2>
-          <p className="text-text-secondary text-[17px] md:text-[19px] leading-[1.7] break-keep max-w-[680px]">
+          <p className="text-[18px] md:text-[20px] font-medium text-text-secondary leading-[1.7] break-keep max-w-[680px]">
             이커머스, B2B 플랫폼, AI/LMS 서비스에서 고객 리서치, 데이터 분석, 서비스 기획, 프로젝트 관리를 수행했습니다. 상세 산출물은 미팅에서 익명화된 형태로 확인하실 수 있습니다.
           </p>
         </div>
@@ -53,7 +53,7 @@ export default function CaseStudiesSection() {
                   {item.tag}
                 </div>
                 <h3 className="text-[24px] md:text-[28px] font-bold text-text-primary leading-[1.3] break-keep">{item.title}</h3>
-                <p className="text-[16px] text-text-secondary pb-6 border-b border-border-subtle break-keep">{item.summary}</p>
+                <p className="text-[16px] md:text-[17px] font-medium text-text-secondary pb-6 border-b border-border-subtle break-keep">{item.summary}</p>
                 
                 {/* Capabilities Tags */}
                 <div className="mt-2 flex flex-wrap gap-2">
@@ -72,14 +72,14 @@ export default function CaseStudiesSection() {
                     <span className="w-1.5 h-1.5 rounded-full bg-border-subtle"></span>
                     Problem
                   </h4>
-                  <p className="text-text-primary text-[16px] md:text-[17px] leading-[1.7] break-keep">{item.problem}</p>
+                  <p className="text-[17px] md:text-[18px] font-medium text-text-secondary leading-[1.7] break-keep">{item.problem}</p>
                 </div>
                 <div>
                   <h4 className="text-[13px] font-bold font-mono text-text-muted mb-2.5 uppercase tracking-wider flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-border-subtle"></span>
                     Approach
                   </h4>
-                  <p className="text-text-secondary text-[16px] md:text-[17px] leading-[1.7] break-keep">{item.approach}</p>
+                  <p className="text-[17px] md:text-[18px] font-medium text-text-secondary leading-[1.7] break-keep">{item.approach}</p>
                 </div>
                 
                 {/* Result Highlight Box */}
@@ -91,7 +91,7 @@ export default function CaseStudiesSection() {
                   </h4>
                   <div className="flex flex-col gap-2">
                     {item.result.split('\n').map((line, i) => (
-                      <p key={i} className="text-text-primary text-[16px] md:text-[18px] font-bold leading-[1.6] break-keep flex items-start gap-2.5">
+                      <p key={i} className="text-text-secondary text-[16px] md:text-[18px] font-bold leading-[1.6] break-keep flex items-start gap-2.5">
                         <svg aria-hidden="true" className="w-5 h-5 text-accent-primary mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
                         {line}
                       </p>
@@ -104,16 +104,7 @@ export default function CaseStudiesSection() {
           ))}
         </div>
 
-        {/* Micro CTA */}
-        <div className="mt-16 lg:mt-24 text-center flex flex-col items-center">
-          <Link 
-            href="#contact" 
-            className="inline-flex items-center gap-3 bg-btn-secondary-bg text-text-primary border border-border-subtle hover:border-text-muted font-medium text-[16px] px-8 h-[56px] rounded-xl transition-all shadow-sm group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary"
-          >
-            유사 프로젝트 상담하기
-            <svg aria-hidden="true" className="w-4 h-4 text-text-muted group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
-          </Link>
-        </div>
+
 
       </div>
     </section>
